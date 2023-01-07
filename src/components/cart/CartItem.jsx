@@ -1,6 +1,7 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { getUserCart } from "../../store/slices/cart.slice";
 import getConfig from "../../utils/getConfig";
 import "./cartItem.css";
@@ -38,12 +39,16 @@ const CartItem = ({ product }) => {
     })
     .catch(err=>console.log(err))
   }
+  const navigate = useNavigate()
+  const handleClick = (id)=>{
+    navigate(`/product/${id}`)
+  }
   return (
     <div className="cartItem">
       <div className="CartItem__container">
         <div className="cartItem__description">
           <div className="cartItem__brand">{product.brand}</div>
-          <div className="cartItem__title">{product.title}</div>
+          <div onClick={()=>{handleClick(product.id)}} className="cartItem__title">{product.title}</div>
           <div className="cartItem__quantity">
             <p>quantity:</p>
             <div>
