@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,900&display=swap');
+:root{
+    --text-color: rgb(90, 90, 90);
+    --card-color: rgb(255, 255, 255);
+    --border-color: rgb(184, 184, 184);
+    --font-zise: 1.2rem;
+    --title-color: #f85555;;
+}
+.singup{
+    background-color: rgb(238, 238, 238);
+    margin-top: 80px;
+    width: 100%;
+
+}

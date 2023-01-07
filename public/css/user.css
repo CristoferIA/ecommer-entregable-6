@@ -1,0 +1,13 @@
+:root{
+    --text-color: rgb(90, 90, 90);
+    --card-color: rgb(255, 255, 255);
+    --border-color: rgb(184, 184, 184);
+    --font-zise: 1.2rem;
+    --title-color: #f85555;;
+}
+.user{
+    background-color: rgb(238, 238, 238);
+    margin-top: 80px;
+    width: 100%;
+
+}

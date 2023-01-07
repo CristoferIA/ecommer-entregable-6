@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,900&display=swap');
+:root{
+    --text-color: rgb(90, 90, 90);
+    --card-color: rgb(255, 255, 255);
+    --border-color: rgb(184, 184, 184);
+    --font-zise: 1.2rem;
+    --title-color: #f85555;;
+}
+.login{
+    background-color: white;   
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    box-sizing: border-box;
+}
+
+.login__container{
+    background-color: white;
+    width: 100%;
+    max-width: 330px;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 5px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.login__header>h1,
+.login__header>p{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: var(--text-color);
+    font-weight: 500;
+}
+.login__test{
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: #f3f8ff;
+}
+.login__test>h4{
+    text-align: center;
+}
+.login__autentications{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.login__data{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+}
+.login__user,
+.login__password{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.login__user>input, 
+.login__password>input
+{
+    outline: 1px solid var(--border-color);
+    padding: 0.4rem;
+    border: none
+}
+.login__submit>button{
+    width: 100%;
+    height: 30px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    background-color: var(--title-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login__submit>button:active{
+    background-color: rgb(197, 12, 12);
+}
+
+.login__register{
+    font-family: 'Roboto', sans-serif;
+}
