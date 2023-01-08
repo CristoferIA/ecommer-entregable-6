@@ -42,7 +42,11 @@ const Home = () => {
     <div className="App__container">
       <div className="Product">
         <div className="Product__filter">
+          
           <div className="filter">
+          <h1 className="filter__close">
+          <button onClick={btn_filter}><i className="fas fa-times"></i></button>
+          </h1>
             <ProductFilter
               setPriceFilter={setPriceFilter}
               setInputValues={setInputValues}
